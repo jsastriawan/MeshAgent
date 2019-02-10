@@ -302,6 +302,11 @@ ifeq ($(GCCTEST),0)
 LDFLAGS += -no-pie
 endif
 
+ifeq ($(DRM),1)
+CFLAGS += `pkg-config libdrm --cflags`
+LDEXTRA += `pkg-config libdrm --libs`
+endif
+
 .PHONY: all clean
 
 all: $(EXENAME) $(LIBNAME)

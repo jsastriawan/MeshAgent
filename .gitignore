@@ -329,3 +329,12 @@ ASALocalRun/
 
 # Klocwork
 .klocwork/
+
+# build .o
+meshconsole/*.o
+meshcore/*.o
+meshcore/KVM/Linux/*.o
+meshcore/KVM/MacOS/*.o
+meshcore/KVM/Windows/*.o
+microscript/*.o
+microstack/*.o

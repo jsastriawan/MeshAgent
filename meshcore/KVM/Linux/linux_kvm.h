@@ -17,6 +17,8 @@ limitations under the License.
 #ifndef LINUX_KVM_H_
 #define LINUX_KVM_H_
 
+#define _GNU_SOURCE
+
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <assert.h>
